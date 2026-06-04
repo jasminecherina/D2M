@@ -1,112 +1,187 @@
-/* CSS Reset */
-* {
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-/* Body Styling */
-body {
-    background-color: #f4f6f9;
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+body{
+    background:linear-gradient(to right,#f5f7fa,#c3cfe2);
+    line-height:1.6;
 }
 
-/* Header */
-#header {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#333;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-/* Card Section */
-.card {
-    background-color: white;
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
 }
 
-/* Headings */
-h2 {
-    color: #003366;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0;
 }
 
-/* Paragraph */
-p {
-    line-height: 1.6;
-    text-align: justify;
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size: 60px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.hero p{
+     font-size:22px;
+     color:#666;
+}
+
+/* Cards */
+
+.card{
+    width:80%;
+    margin:30px auto;
+    padding:40px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    animation:fadeIn 1s ease-in;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#333;
 }
 
 /* Image */
-img {
-    border: 3px solid #003366;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.card img{
+    width:200px;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
 }
 
-/* Blockquote */
-blockquote {
-    background-color: #eef5ff;
-    border-left: 5px solid #003366;
-    padding: 15px;
-    font-style: italic;
+/* Quote */
+
+blockquote{
+    background:#f4f4f4;
+    border-left:5px solid #333;
+    padding:15px;
+    margin:10px 0;
+    font-style:italic;
 }
 
-/* Lists */
-ul {
-    list-style-type: square;
-}
+/* List */
 
-/* Links */
-a:link {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
-    text-decoration: underline;
+ul{
+    padding-left:20px;
 }
 
 /* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
+
+table{
+    width:100%;
+    border-collapse:collapse;
 }
 
-th {
-    background-color: #003366;
-    color: white;
-    padding: 12px;
+table,
+th,
+td{
+    border:1px solid black;
 }
 
-td {
-    padding: 12px;
-    border: 1px solid #ddd;
+th{
+    background:#333;
+    color:white;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+th,
+td{
+    padding:10px;
+    text-align:center;
 }
 
 /* Button */
-button {
-    background-color: #003366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+
+button{
+    padding:10px 20px;
+    background:#333;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:0.4s;
 }
 
-button:hover {
-    outline: 2px solid #003366;
-    background-color: #0055aa;
+button:hover{
+    background:darkblue;
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    background:#333;
+    color:white;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
 }
