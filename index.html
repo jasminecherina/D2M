@@ -2,29 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DevToMark-Intern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevToMark - Mentor Profile</title>
+    <link rel="icon" type="image/png" href="D2M.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header -->
-     <div id="header">
+
+    <nav>
+        <div class="logo">
+            <img src="D2M.png" alt="Logo">
+            <h2>DevToMark</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#quote">Quote</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#mentor">Mentor</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
         <h1>DevToMark Solutions</h1>
-        <p>guiding Students towards Success</p>
-     </div>
-    
-    <!--About-->
-    <div class="card">
+        <p>Guiding Students Towards Success</p>
+    </section>
+
+    <div class="card" id="about">
         <h2>About</h2>
-        <img src="D2M.png" alt="DevToMark Logo">
-        
-        <p> 
-            My trainer keerthivasan is a inspiring person who motivates students 
+
+        <p>
+            My trainer Keerthivasan is an inspiring person who motivates students
             to achieve their goals.
         </p>
 
         <p>
             <strong>Strength:</strong> Leadership & Guidance <br>
-            <strong>Specialization:</strong> Theriyaathu broo 
+            <strong>Specialization:</strong> Student Mentoring
         </p>
 
         <p>
@@ -32,33 +48,28 @@
         </p>
     </div>
 
-    <!--Quote-->
-    <div class="card">
-       <h2> Favorite Quote</h2>
+    <div class="card" id="quote">
+        <h2>Favorite Quote</h2>
 
-       <blockquote>
+        <blockquote>
             "Education is the most powerful weapon which you can use to change the world."
-       </blockquote>
+        </blockquote>
 
-       <p>
-           - <strong>Nelson Mandela</strong>
-       </p>
+        <p>- <strong>Nelson Mandela</strong></p>
     </div>
 
-    <!--Skills-->
-    <div class="card">
+    <div class="card" id="skills">
         <h2>Skills</h2>
 
         <ul>
             <li>Teaching</li>
             <li>Problem Solving</li>
             <li>Project Guidance</li>
-            <li>career Monitoring</li>
+            <li>Career Monitoring</li>
         </ul>
     </div>
 
-    <!--Mentor information-->
-    <div class="card">
+    <div class="card" id="mentor">
         <h2>Mentor Information</h2>
 
         <table>
@@ -74,7 +85,7 @@
 
             <tr>
                 <td>Experience</td>
-                <td>Therlaayaee manichuuuu...</td>
+                <td>Experienced Mentor</td>
             </tr>
 
             <tr>
@@ -89,24 +100,27 @@
         </table>
     </div>
 
-    <!-- Contact -->
-    <div class="card">
+    <div class="card" id="contact">
         <h2>Contact</h2>
 
         <p>
-            Learn more..
+            Learn more about
             <abbr title="HyperText Markup Language">HTML</abbr>
             and Web Development.
         </p>
 
         <a href="https://www.devtomark.com/" target="_blank">
-            Visit Our Website
+            Visit DevToMark Website
         </a>
 
         <br><br>
 
         <button>Contact Mentor</button>
     </div>
+
+    <footer>
+        <p>© 2026 Jasmine Cherina | DevToMark Internship Project</p>
+    </footer>
 
 </body>
 </html>
